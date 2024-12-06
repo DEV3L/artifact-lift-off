@@ -1,7 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Footer, Header, Task, TaskForm, TaskList } from "./Components";
+import {
+  Header,
+  ReachCallToAction,
+  Task,
+  TaskForm,
+  TaskList,
+} from "./Components";
 
 const defaultTasks = [
   { id: "1", text: "Contact Artifact L!ft Off", completed: false },
@@ -47,8 +53,8 @@ export const Content = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-4">
-      <main className="max-w-2xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8">
+      <main className="max-w-2xl mx-auto space-y-6">
         <Header />
         <TaskForm
           newTask={newTask}
@@ -62,7 +68,7 @@ export const Content = () => {
           toggleComplete={toggleComplete}
           removeTask={removeTask}
         />
-        <Footer />
+        <ReachCallToAction />
       </main>
     </div>
   );
