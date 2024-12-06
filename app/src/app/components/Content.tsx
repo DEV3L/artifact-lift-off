@@ -1,5 +1,6 @@
 "use client";
 
+import { Box, Container } from "@mui/material";
 import { useState } from "react";
 import {
   Header,
@@ -54,10 +55,19 @@ export const Content = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8">
-      <main className="max-w-2xl mx-auto space-y-6">
-        <Header />
-        <HeroBanner title="Simplify, Organize, Elevate" />
+    <Box
+      sx={{
+        minHeight: "100vh",
+        background: "linear-gradient(to bottom right, #1f2937, #1c1c1c)",
+        color: "white",
+        padding: 4,
+      }}
+    >
+      <Container maxWidth="md">
+        <Box sx={{ marginBottom: 6 }}>
+          <Header />
+          <HeroBanner title="Simplify, Organize, Elevate" />
+        </Box>
         <TaskForm
           newTask={newTask}
           setNewTask={setNewTask}
@@ -71,7 +81,7 @@ export const Content = () => {
           removeTask={removeTask}
         />
         <ReachCallToAction />
-      </main>
-    </div>
+      </Container>
+    </Box>
   );
 };
