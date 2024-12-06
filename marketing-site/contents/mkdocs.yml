@@ -21,6 +21,7 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
+  - Product: product.md
   - Contact: contact.md
 
 # Plugins
