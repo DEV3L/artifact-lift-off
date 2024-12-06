@@ -1,0 +1,58 @@
+# Site Information
+site_name: "Artifact L!ft Off"
+site_url: https://dev3l.github.io/artifact-liftoff/
+site_author: "Justin Beall"
+site_description: "A simple, responsive site template to showcase projects and artifacts with ease. Build stunning sites quickly and effectively."
+
+# Theme Configuration
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+
+  font:
+    header: "Dank Mono"
+    text: Poppins
+  favicon: "images/favicon.png"
+  logo: "images/logo.png"
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
+
+# Plugins
+plugins:
+  - search
+  - macros
+  - ultralytics:
+      verbose: true
+      enabled: true
+      add_desc: true
+      add_image: true
+      add_keywords: true
+      add_json_ld: true
+      add_css: true
+  - minify_html
+
+# Markdown Extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - footnotes
+
+extra_css:
+  - stylesheets/hero-banner.css
+  - stylesheets/carousel.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - overrides/carousel.js
+  - overrides/footer.js

@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "artifact-lift-off"
+dynamic = ["version"]
+description = "A simple, responsive site template to showcase projects and artifacts with ease. Build stunning sites quickly and effectively."
+license = { file = "LICENSE" }
+readme = "README.md"
+authors = [{ name = "Justin Beall", email = "dev3loper.ai@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "loguru",
+    "mkdocs-macros-plugin",
+    "mkdocs-material",
+    "mkdocs-minify-html-plugin",
+    "mkdocs-ultralytics-plugin",
+    "mkdocs",
+    "pymdown-extensions",
+    "python-dotenv",
+]
+
+[tool.hatch.version]
+path = "setup.cfg"
+pattern = "version = (?P<version>\\S+)"
+
+[tool.hatch.build.targets.sdist]
+include = ["/src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.envs.default]
+type = "virtual"
+path = ".venv"
+dependencies = [
+    "mkdocs-macros-plugin",
+    "mkdocs-material",
+    "mkdocs-minify-html-plugin",
+    "mkdocs-ultralytics-plugin",
+    "mkdocs",
+    "pymdown-extensions",
+    "pyright",
+    "pytest-cov",
+    "pytest",
+]
+
+[tool.hatch.envs.default.scripts]
+serve = "mkdocs serve"
+deploy = "mkdocs gh-deploy"
+
+[tool.hatch.envs.hatch-static-analysis]
+config-path = "ruff_defaults.toml"
+
+[tool.ruff]
+extend = "ruff_defaults.toml"

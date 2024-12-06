@@ -1,0 +1,38 @@
+.hero-banner {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  position: relative;
+  top: -16px;
+}
+
+.hero-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.hero-banner-title {
+  color: #fff;
+  font-family: "Dank Mono", monospace;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+.hero-banner-subtitle {
+  font-family: "Dank Mono", monospace;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 0;
+  position: relative;
+}
+
+.hero-banner-cta {
+  font-size: 1.15rem;
+  margin: 8px 0;
+  position: relative;
+}
