@@ -27,6 +27,7 @@ Artifact L!ft Off is a responsive site template designed to showcase projects an
 - **Responsive Design**: Ensure your site looks great on any device.
 - **Hero Banner**: Feature a prominent hero banner to capture attention with stunning visuals.
 - **Carousel**: Showcase multiple images or content pieces in a dynamic carousel format.
+- **Contact Form Integration**: Easily connect with your audience using a Formspree-powered contact form.
 
 ## Installation
 

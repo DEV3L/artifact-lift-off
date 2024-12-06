@@ -49,9 +49,10 @@ markdown_extensions:
   - footnotes
 
 extra_css:
-  - stylesheets/hero-banner.css
-  - stylesheets/carousel.css
   - stylesheets/extra.css
+  - stylesheets/carousel.css
+  - stylesheets/contact.css
+  - stylesheets/hero-banner.css
 
 extra_javascript:
   - overrides/carousel.js
