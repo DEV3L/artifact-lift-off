@@ -1,0 +1,16 @@
+.carousel {
+  transition: opacity 2s ease-in-out;
+  opacity: 0;
+  display: none;
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  aspect-ratio: 16 / 9;
+}
+
+.carousel.active {
+  opacity: 1;
+}

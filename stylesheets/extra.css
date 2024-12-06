@@ -1,0 +1,115 @@
+/* Define the Dank Mono font */
+@font-face {
+  font-family: "Dank Mono";
+  src: url("../assets/fonts/DankMono-Regular.woff2") format("woff2"),
+    url("../assets/fonts/DankMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dank Mono";
+  src: url("../assets/fonts/DankMono-Italic.woff2") format("woff2"),
+    url("../assets/fonts/DankMono-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dank Mono", monospace !important;
+}
+
+.monospace {
+  font-family: "Dank Mono", monospace;
+}
+
+.italic {
+  font-family: "Dank Mono", monospace;
+  font-style: italic;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: #0a3d5a;
+  color: #e0e5eb;
+  padding: 8px 0;
+  border-top: 2px solid #00a8e8;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f72585;
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+footer.md-footer {
+  display: none !important;
+}
+
+.share-buttons {
+  display: none !important;
+}
+
+/* image styling */
+
+.img-16-9 {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  aspect-ratio: 16/9;
+}
+
+.img-3-2 {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 3/2;
+  margin-bottom: 20px;
+}
+
+.img-3-4 {
+  display: block;
+  margin: auto;
+  max-height: 500px;
+  aspect-ratio: 3/4;
+  margin-bottom: 20px;
+}
+
+.img-5-6 {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 5/6;
+  margin-bottom: 20px;
+}
+
+.img-4-3 {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 4/3;
+  margin-bottom: 20px;
+}
