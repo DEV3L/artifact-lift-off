@@ -1,0 +1,78 @@
+/* General Styling for Contact Section */
+.contact-section {
+  background-image: url("../images/contact/form-background.png");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  position: relative;
+}
+
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #00a8e8; /* Celestial Blue */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00a8e8; /* Celestial Blue border */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Light background for contrast */
+  color: #333;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-input {
+  height: 40px;
+}
+
+.contact-textarea {
+  resize: none;
+}
+
+.contact-button {
+  background-color: #00a8e8; /* Celestial Blue */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-button:hover {
+  background-color: #0086c8; /* Slightly darker blue on hover */
+}
