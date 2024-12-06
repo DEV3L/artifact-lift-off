@@ -1,18 +1,19 @@
 "use client";
 import { Metadata } from "next";
-import Head from "next/head";
+
+import { default as NextHead } from "next/head";
 import { useEffect } from "react";
 
-export const AiDoHead = ({ title = "Artifact L!ft Off" }) => {
+export const Head = ({ title = "Artifact L!ft Off" }) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
 
   return (
-    <Head>
+    <NextHead>
       <title>{title}</title>
       <link rel="icon" href="/favicon.png" />
-    </Head>
+    </NextHead>
   );
 };
 

@@ -50,8 +50,8 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/carousel.css
   - stylesheets/contact.css
+  - stylesheets/carousel.css
   - stylesheets/hero-banner.css
 
 extra_javascript:
