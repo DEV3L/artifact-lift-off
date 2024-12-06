@@ -8,6 +8,7 @@ import {
   TaskForm,
   TaskList,
 } from "./Components";
+import { HeroBanner } from "./HeroBanner";
 
 const defaultTasks = [
   { id: "1", text: "Contact Artifact L!ft Off", completed: false },
@@ -56,6 +57,7 @@ export const Content = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8">
       <main className="max-w-2xl mx-auto space-y-6">
         <Header />
+        <HeroBanner title="Simplify, Organize, Elevate" />
         <TaskForm
           newTask={newTask}
           setNewTask={setNewTask}

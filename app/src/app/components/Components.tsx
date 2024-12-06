@@ -17,7 +17,6 @@ export const Header = () => (
     transition={{ duration: 0.6 }}
   >
     <h1 className="text-4xl font-bold mb-2">AiDo</h1>
-    <p className="text-gray-400">Simplify, Organize, Elevate</p>
   </motion.header>
 );
 

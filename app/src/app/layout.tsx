@@ -8,27 +8,30 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "DickinBaus Food Truck",
-  description: "Delicious food truck favorites delivered to your mouth",
-  metadataBase: new URL("https://dickinbaus-food-truck.vercel.app"),
+  title: "AiDo Task Organizer",
+  description:
+    "Streamline your daily task management with AiDo, a responsive and intuitive task organizer.",
+  metadataBase: new URL("https://aido-lift-off.vercel.app"),
   openGraph: {
-    title: "DickinBaus Food Truck",
-    description: "Delicious food truck favorites delivered to your mouth",
+    title: "AiDo Task Organizer",
+    description:
+      "Streamline your daily task management with AiDo, a responsive and intuitive task organizer.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "DickinBaus Food Truck Menu",
+        alt: "AiDo Task Organizer",
       },
     ],
-    siteName: "DickinBaus Food Truck",
+    siteName: "AiDo Task Organizer",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "DickinBaus Food Truck",
-    description: "Delicious food truck favorites delivered to your mouth",
+    title: "AiDo Task Organizer",
+    description:
+      "Streamline your daily task management with AiDo, a responsive and intuitive task organizer.",
     images: ["/og-image.png"],
   },
 };
